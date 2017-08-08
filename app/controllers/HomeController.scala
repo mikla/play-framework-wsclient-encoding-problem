@@ -28,7 +28,7 @@ class HomeController @Inject()(cc: ControllerComponents, ahc: WSClient)
     val employee = Employee("āčēģīķļņšūž ĀČĒĢĪĶĻŅŠŪŽ")
     val json = employee.asJson
 
-    Ok(json).as(JSON) // works fine if replace JSON to "text/json; charset-utf-8"
+    Ok(json).as(JSON) // works fine if replace JSON to "text/json; charset=utf-8"
   }
 
   def requestEmployee() = Action.async { implicit req =>
