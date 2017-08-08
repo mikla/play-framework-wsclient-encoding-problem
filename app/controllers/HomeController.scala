@@ -5,8 +5,6 @@ import play.api.libs.ws.WSClient
 import play.api.mvc._
 import scala.concurrent.ExecutionContext.Implicits.global
 
-case class Employee(name: String)
-
 @Singleton
 class HomeController @Inject()(cc: ControllerComponents, ahc: WSClient)
   extends AbstractController(cc) {
