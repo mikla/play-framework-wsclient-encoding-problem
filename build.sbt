@@ -13,5 +13,10 @@ libraryDependencies += guice
 libraryDependencies += ws
 
 libraryDependencies ++= Seq(
+  "io.circe" %%% "circe-core" % circeVersion,
+  "io.circe" %%% "circe-generic" % circeVersion,
+  "io.circe" %%% "circe-parser" % circeVersion,
+  "play-circe" %% "play-circe" % "2.6-0.8.0",
   "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.0" % Test
 )
+
