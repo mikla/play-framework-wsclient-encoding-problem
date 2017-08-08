@@ -15,3 +15,5 @@ I'm using `WSClient` to send request to "self" (`localhost:9000/utf8response`) t
 Workaround:
 
 Replace `JSON` to `text/json; charset=utf-8`.
+
+Stackoverflow question [here](https://stackoverflow.com/questions/45566456/playframework-wsclient-doesnt-parse-utf-8-application-json-response-correctly).  
