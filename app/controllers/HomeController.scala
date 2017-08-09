@@ -8,13 +8,14 @@ import io.circe.syntax._
 import play.api.libs.circe.Circe
 import play.api.libs.ws.WSClient
 import play.api.mvc._
+
 import scala.concurrent.ExecutionContext.Implicits.global
 
 case class Employee(name: String)
 
 @Singleton
-class HomeController @Inject()(cc: ControllerComponents, ahc: WSClient)
-  extends AbstractController(cc)
+class HomeController @Inject()(ahc: WSClient)
+  extends Controller
     with Circe {
 
   implicit val employeeDecoder: Decoder[Employee] = deriveDecoder[Employee]
