@@ -17,3 +17,7 @@ Workaround:
 Replace `JSON` to `text/json; charset=utf-8`.
 
 Stackoverflow question [here](https://stackoverflow.com/questions/45566456/playframework-wsclient-doesnt-parse-utf-8-application-json-response-correctly).  
+
+
+UPD: 
+Can't reproduce with play to `2.8.19`.
